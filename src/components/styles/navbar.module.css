@@ -1,0 +1,65 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: rgba(128, 128, 128, 0.679);
+  margin: 1rem;
+  border-radius: 30px;
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  
+}
+
+.logo{
+  width: 6rem;
+  
+}
+
+
+.navLinks{
+  display: flex;
+  gap:2.5rem;
+}
+
+.navLink{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+
+.search{
+  display: flex;
+  gap:0.8rem;
+}
+.inputSearch{
+  padding: 0.5rem;
+  width: 25em;
+}
+
+.register{
+  display: flex;
+  gap:2rem;
+}
+
+.buttons{
+  padding: 0.8rem;
+  background-color: red;
+  color: white;
+
+  border-radius: 10px;
+  border: none;
+}
+
+.button1{
+  background-color: black;
+}
+
+.btnLinks {
+  text-decoration: none;
+  color: white;
+}

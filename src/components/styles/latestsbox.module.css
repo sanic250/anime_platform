@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(37, 22, 22, 0.793);
+  width: fit-content;
+  height: fit-content;
+
+}
+
+.image{
+  width: 12rem;
+}
+
+
+.ratingCnt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.rating{
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  
+  margin: 0.5rem;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.age{
+  display: inline-block;
+  width: fit-content;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  
+  margin: 0.5rem;
+  background-color: rgb(142, 109, 48);
+  color: white;
+  font-weight: bold;
+}
+
+.title{
+  text-align: center;
+  background-color: black;
+  padding: 0.3rem;
+  color: white;
+}
