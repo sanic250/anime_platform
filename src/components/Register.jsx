@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { useState } from "react";
+import { Navigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./styles/register.module.css";
 import { register } from "../services/api";
@@ -11,18 +12,24 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [isRegistered, setIsRegistered] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const data = await register(email, password);
       setSuccess("Rejestracja udana");
+      setIsRegistered(true);
       setError("");
     } catch (err) {
       setError(err.response?.data?.message || "Błąd rejestracji");
       setSuccess("");
     }
   };
+
+  if (isRegistered) {
+    return <Navigate to="/Login" replace />;
+  }
 
   return (
     <div className={styles.container}>
@@ -61,6 +68,7 @@ const Register = () => {
           <p className={styles.bottomLink}>
             Are You already have an acount?<a href="/Login">Login</a>{" "}
           </p>
+          
         </form>
       </div>
     </div>

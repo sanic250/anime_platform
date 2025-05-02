@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  margin: 20px;
+}
+
+.addForm{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(128, 128, 128, 0.679);
+  padding: 3rem;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.form{
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.labels{
+  text-decoration: underline;
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: column;
+  gap:0.5rem;
+  text-align: center;
+}
+
+.labels input{
+  padding: 0.4rem 1.2rem;
+}
+
+.buttonAdd{
+  font-family: "Chicle", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  background-color: orange;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 250ms;
+}

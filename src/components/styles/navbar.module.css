@@ -29,6 +29,7 @@
   color: black;
   font-weight: 700;
   font-size: 1.7rem;
+  transition: 250ms;
   text-decoration: underline;
 }
 
@@ -46,13 +47,25 @@
   gap:2rem;
 }
 
+.navLink:hover{
+  color: blue;
+  transform: scale(1.1);
+}
+
 .buttons{
   padding: 0.8rem;
   background-color: red;
   color: white;
 
   border-radius: 10px;
+  transition: 250ms;
   border: none;
+  cursor: pointer;
+}
+
+.buttons:hover{
+  background-color: rgb(196, 28, 28);
+  transform: scale(1.1);
 }
 
 .button1{
@@ -62,4 +75,47 @@
 .btnLinks {
   text-decoration: none;
   color: white;
+}
+
+
+
+.profilImg{
+  width: 2.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.profilImg:hover{
+    transform: scale(1.2);
+}
+
+.toggleMenu{
+  background-color: gray;
+  padding: 0.8rem;
+  position: absolute;
+  right: 9%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.toggleMenu ul{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: underline;
+  
+}
+
+.menuLinks{
+  cursor: pointer;
+  transition: 250ms;
+  color: black;
+}
+
+.menuLinks:hover{
+  color: blue;
+  
 }

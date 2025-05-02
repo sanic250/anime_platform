@@ -30,3 +30,12 @@ export const setAuthToken = (token) => {
     delete api.defaults.headers.common["Authorization"];
   }
 };
+
+export const logoutAPI = async () => {
+  try {
+    await api.post("/auth/logout");
+    // Czyszczenie stanu zostanie wykonane w komponencie
+  } catch (error) {
+    console.error("Błąd podczas wylogowywania:", error);
+  }
+};
